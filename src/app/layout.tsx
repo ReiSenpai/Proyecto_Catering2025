@@ -1,6 +1,31 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Abel, Inter, Italiana, Tienne } from 'next/font/google'
+
+export const abel = Abel({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-abel',
+})
+
+export const inter = Inter({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+})
+
+export const italiana = Italiana({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-italiana',
+})
+
+export const tienne = Tienne({
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+  variable: '--font-tienne',
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
